@@ -1,0 +1,17 @@
+post方式 传参为拼接字符串   此时传参格式为Form Data
+               实现方法{
+                          1：用 URLSearchParams 传递参数
+                               let param = new URLSearchParams()
+                                  param.append('username', 'admin')
+                                  param.append('pwd', 'admin')
+                                   axios({
+                                       method: 'post',
+                                       url: '/api/lockServer/search',
+                                      data: param
+                                   })
+                       2：引入qs   data: Qs.stringify(data)
+                       3：axios.post('/api/lockServer/search',"userName='admin'&pwd='admin'");
+                        }
+
+
+post方式  默认以对象传参  此时传参格式为Request Payload

@@ -1,0 +1,12 @@
+git checkout -b 本地分支名 origin/远程分支名
+
+git log -p -- src/api/index.js   查看详情日志
+
+git show  3a2ad3b52:src/api/index.js  查看某个版本内容
+
+git checkout  c5f567 -- file1/to/restore file2/to/restore     回退某一文件到指定版本
+
+git reset filename  将文件从缓存区出来
+
+
+git diff hash1 hash2 --stat  查看两个版本之间修改的文件
